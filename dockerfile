@@ -48,7 +48,7 @@ RUN  wget https://gigenet.dl.sourceforge.net/project/virtualgl/3.1/virtualgl_3.1
         echo $PASSWORD | vncpasswd -f > ~/.vnc/passwd && \
         chmod 0600 ~/.vnc/passwd && \
         echo "set border 1" > ~/.ratpoisonrc  && \
-        echo "exec retroarch">> ~/.ratpoisonrc && \
+        echo "exec lxterminal">> ~/.ratpoisonrc && \
         openssl req -x509 -nodes -newkey rsa:2048 -keyout ~/novnc.pem -out ~/novnc.pem -days 3650 -subj "/C=US/ST=NY/L=NY/O=NY/OU=NY/CN=NY emailAddress=email@example.com"
 
 EXPOSE 80
